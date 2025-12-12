@@ -34,7 +34,7 @@
     "vite-tsconfig-paths": "5.1.4"
   },
   "devDependencies": {
-    "@nelsonlaidev/eslint-config": "2.4.0",
+    "@nelsonlaidev/eslint-config": "2.4.1",
     "@nelsonlaidev/prettier-config": "0.1.1",
     "@nelsonlaidev/typescript-config": "1.1.0",
     "@tanstack/devtools-vite": "0.3.12",
