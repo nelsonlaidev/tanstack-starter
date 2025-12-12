@@ -21,6 +21,10 @@ Minimal starter for building an SSR-enabled React app with TanStack Start + TanS
 - Node: see [.nvmrc](.nvmrc)
 - Package manager: **pnpm** (enforced via `preinstall` in [package.json](package.json))
 
+Notes:
+
+- [.npmrc](.npmrc) sets `engine-strict=true` and `save-exact=true`.
+
 If you use `nvm`:
 
 ```bash
