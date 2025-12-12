@@ -34,9 +34,9 @@
     "vite-tsconfig-paths": "5.1.4"
   },
   "devDependencies": {
-    "@nelsonlaidev/eslint-config": "2.4.1",
+    "@nelsonlaidev/eslint-config": "2.4.2",
     "@nelsonlaidev/prettier-config": "0.1.1",
-    "@nelsonlaidev/typescript-config": "1.1.0",
+    "@nelsonlaidev/typescript-config": "1.1.1",
     "@tanstack/devtools-vite": "0.3.12",
     "@types/node": "24.10.3",
     "@types/react": "19.2.7",
@@ -44,8 +44,8 @@
     "@vitejs/plugin-react": "5.1.2",
     "eslint": "9.39.1",
     "jsdom": "27.3.0",
-    "knip": "5.73.3",
-    "lefthook": "2.0.9",
+    "knip": "5.73.4",
+    "lefthook": "2.0.11",
     "prettier": "3.7.4",
     "prettier-plugin-packagejson": "2.5.20",
     "typescript": "5.9.3",
