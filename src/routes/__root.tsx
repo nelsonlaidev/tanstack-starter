@@ -29,7 +29,9 @@ export const Route = createRootRoute({
   shellComponent: RootDocument
 })
 
-type RootDocumentProps = React.PropsWithChildren
+interface RootDocumentProps {
+  children: React.ReactNode
+}
 
 function RootDocument(props: Readonly<RootDocumentProps>) {
   const { children } = props
