@@ -1,37 +1,41 @@
-import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router";
-import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
-import { TanStackDevtools } from "@tanstack/react-devtools";
+import { TanStackDevtools } from '@tanstack/react-devtools'
+import { createRootRoute, HeadContent, Scripts } from '@tanstack/react-router'
+import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 
-import appCss from "../styles.css?url";
+import appCss from '../styles.css?url'
 
 export const Route = createRootRoute({
   head: () => ({
     meta: [
       {
-        charSet: "utf-8",
+        charSet: 'utf8'
       },
       {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1",
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
       },
       {
-        title: "Tanstarter",
-      },
+        title: 'Tanstack Starter'
+      }
     ],
     links: [
       {
-        rel: "stylesheet",
-        href: appCss,
-      },
-    ],
+        rel: 'stylesheet',
+        href: appCss
+      }
+    ]
   }),
 
-  shellComponent: RootDocument,
-});
+  shellComponent: RootDocument
+})
 
-function RootDocument({ children }: { children: React.ReactNode }) {
+type RootDocumentProps = React.PropsWithChildren
+
+function RootDocument(props: Readonly<RootDocumentProps>) {
+  const { children } = props
+
   return (
-    <html lang="en">
+    <html lang='en'>
       <head>
         <HeadContent />
       </head>
@@ -39,17 +43,17 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         {children}
         <TanStackDevtools
           config={{
-            position: "bottom-right",
+            position: 'bottom-right'
           }}
           plugins={[
             {
-              name: "Tanstack Router",
-              render: <TanStackRouterDevtoolsPanel />,
-            },
+              name: 'Tanstack Router',
+              render: <TanStackRouterDevtoolsPanel />
+            }
           ]}
         />
         <Scripts />
       </body>
     </html>
-  );
+  )
 }

@@ -1,13 +1,16 @@
+# Dependencies
 node_modules
-.DS_Store
-dist
-dist-ssr
-*.local
-count.txt
-.env
-.nitro
-.tanstack
-.wrangler
+
+# Outputs
 .output
-.vinxi
-todos.json
+.tanstack
+
+# Misc
+.DS_Store
+
+# Env files
+.env*.local
+.env
+
+# TypeScript
+*.tsbuildinfo
